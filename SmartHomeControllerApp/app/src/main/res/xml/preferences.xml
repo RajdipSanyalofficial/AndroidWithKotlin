@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreferenceCompat
+        android:key="notifications_enabled"
+        android:title="Enable Notifications"
+        android:summary="Receive notifications about device statuses"
+        android:defaultValue="true" />
+
+    <SwitchPreferenceCompat
+        android:key="sync_enabled"
+        android:title="Enable Sync"
+        android:summary="Automatically sync device statuses every 15 minutes"
+        android:defaultValue="true" />
+
+
+</PreferenceScreen>

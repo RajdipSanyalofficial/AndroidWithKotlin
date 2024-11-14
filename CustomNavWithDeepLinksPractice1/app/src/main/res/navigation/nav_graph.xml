@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.customnavwithdeeplinkspractice1.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_loginFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.customnavwithdeeplinkspractice1.ProfileFragment"
+        android:label="Profile">
+        <argument
+            android:name="userId"
+            app:argType="string"
+            android:defaultValue="defaultUserId" />
+        <deepLink
+            app:uri="myapp://profile/{userId}" />
+    </fragment>
+
+</navigation>

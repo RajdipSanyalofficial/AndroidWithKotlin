@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Button to toggle light -->
+    <Button
+        android:id="@+id/button_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toggle Light" />
+
+    <!-- TextView to display light status -->
+    <TextView
+        android:id="@+id/light_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light Status: Unknown"
+        android:paddingTop="16dp" />
+
+    <!-- Button to adjust thermostat -->
+    <Button
+        android:id="@+id/button_thermostat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adjust Thermostat" />
+
+    <!-- TextView to display thermostat status -->
+    <TextView
+        android:id="@+id/thermostat_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thermostat Status: Unknown"
+        android:paddingTop="16dp" />
+
+</LinearLayout>
